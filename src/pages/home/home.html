@@ -1,0 +1,69 @@
+<ion-header class="hi">
+  <ion-navbar hideBackButton="true" color="primary">
+
+    <ion-buttons icon-only>
+      <button ion-button [hidden]="!back" (click)="goback()">
+        <ion-icon name="arrow-round-back" ></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title [hidden]="!title1">{{'BreakDown' | translate}}</ion-title>
+    <ion-title class="b-title" [hidden]="!title"> {{'BreakDown' | translate }}</ion-title>
+    <ion-buttons end [hidden]="!locate">
+      <button ion-button icon-only (click)='choosePosition()'>
+        <ion-icon name="ios-locate-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons [hidden]="!locate">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-list padding [hidden]="!mylist">
+    <ion-item class="fromto">
+      <ion-label fixed>{{'From' | translate}}</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="start">{{start}}</ion-input>
+    </ion-item>
+    <ion-item class="fromto">
+      <ion-label fixed>{{'To' | translate}}</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="end">{{end}}</ion-input>
+    </ion-item>
+    <h4 class="whi">{{'Sikkh Breakdown Normal' | translate}}<br>QAR {{this.globalservice.cost}}<br>  {{this.globalservice.distance}} <span class="distance">{{'Distance' | translate}}</span></h4>
+  </ion-list>
+  <ion-searchbar class="where" #searchbar placeholder="Where To ?" [hidden]="!search"></ion-searchbar>
+
+</ion-header>
+
+<!--
+<div class="switch">
+  <button ion-button color="light" (click)="(switch = 'map'); resizeMap()" [class.active]="(switch == 'map')" icon-only><ion-icon name="map"></ion-icon></button>
+  <button ion-button color="light" (click)="(switch = 'list'); " [class.active]="(switch == 'list')" icon-only><ion-icon name="list"></ion-icon></button>
+</div>
+-->
+
+<ion-content>
+  <div [hidden]="!(switch == 'list')">
+    <ion-list>
+      <ion-item>
+        <h2>Test</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Test</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Test</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="map" [class.hidemap]="!((switch == 'map') || error)">
+<!--
+    <ion-searchbar #searchbar placeholder="Suchen" [hidden]="!search"></ion-searchbar>
+-->
+    <div id="map" #map></div>
+   <!-- <button ion-button class="b-save" (click)="saveAddress()" [hidden]="!found">save</button>-->
+    <button ion-button color="primary" class="req"[hidden]="!request" (click)="order()">
+      {{'Request' | translate}}
+    </button>
+  </div>
+</ion-content>

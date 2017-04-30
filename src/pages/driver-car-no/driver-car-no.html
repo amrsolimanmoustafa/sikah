@@ -1,0 +1,49 @@
+<!--
+  Generated template for the DriverCarNo page.
+
+<!--
+  Generated template for the MobilePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>SIKKH</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="profile">
+    <ion-avatar>
+      <img  src="assets/imgs/driver.png">
+    </ion-avatar>
+
+    <input type="file" name="userpic" id="userpic" style="display: none;"
+           accept="image/x-png, image/gif, image/jpeg"><label for="userpic"></label>
+
+  </div>
+  <form #f="ngForm">
+    <ion-grid>
+      <ion-row>
+        <h3 color="primary">
+          Enter Your CarNo.</h3>
+      </ion-row>
+      <ion-row>
+        <ion-col col-9>
+          <ion-input class="mobile" type="text" placeholder="Car No" name="car_no" ngModel  required></ion-input>
+        </ion-col>
+        <ion-col col-3>
+          <button [disabled]="!f.valid" type="submit" item-right>
+            <ion-icon class="arrow" color="primary" ios="ios-arrow-round-forward" md="md-arrow-round-forward" (click)="goToDriverID(f)"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+      <br>
+    </ion-grid>
+  </form>
+</ion-content>

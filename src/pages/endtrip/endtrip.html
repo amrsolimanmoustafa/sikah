@@ -1,0 +1,62 @@
+<ion-header class="si">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="logo">{{'Sikkh'| translate}}</ion-title>
+  </ion-navbar>
+  <ion-row>
+    <h1 class="we-ti">Welcome <span>{{this.globalservice.driver.first_name}}</span></h1>
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <ion-row class="des-det">
+    <span class="dd-to">To |</span>
+    <span class="dd-adr">{{this.globalservice.roadDist}}</span>
+    <a class="dd-nav" (click)="navigate()">
+      <ion-icon name="md-navigate"></ion-icon>
+      <span>Navigate</span>
+    </a>
+  </ion-row>
+  <iframe [src]="url" width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <ion-row>
+    <div class="umap">
+      <div class="payment">
+        <img src="assets/imgs/cash.png"> <span>Payment | Cash</span>
+      </div>
+      <div class="goff">
+        | Get off 14MIN
+      </div>
+      <div class="gcancel" (click)="cancel()">
+        | <ion-icon name="ios-remove-circle-outline"></ion-icon> Cancel
+      </div>
+    </div>
+  </ion-row>
+  <ion-row>
+    <button class="no-o" (click)="end()" >Ending Trip</button>
+  </ion-row>
+  <ion-row>
+    <button class="re-c" (click)="receive()">Receive Car</button>
+  </ion-row>
+  <ion-row>
+    <table class="rating">
+      <tbody>
+        <tr>
+          <td class="bb">{{this.globalservice.user_name}}</td>
+          <td>4.92 <ion-icon class="gold" name="star"></ion-icon></td>
+        </tr>
+      </tbody>
+    </table>
+  </ion-row>
+  <ion-row class="dact">
+    <div class="dwrap">
+      <div class="gcall qs">
+        <a ion-text href="tel:{{this.globalservice.clientmobile}}"> <ion-icon name="call"></ion-icon></a>
+      </div>
+      <div class="gsms qs" (click)="sendsms()">
+        <ion-icon name="ios-mail-outline"></ion-icon>
+      </div>
+    </div>
+  </ion-row>
+</ion-content>

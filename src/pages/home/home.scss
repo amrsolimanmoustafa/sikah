@@ -1,0 +1,88 @@
+page-home {
+    // map style
+  .b-save{
+    margin-top: 444px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .b-title {
+    margin-top: -36px;
+  }
+  .where-to{
+    margin-top: 100px;
+  }
+    #map {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute!important;
+        overflow: hidden!important;
+    }
+    .hidemap {
+        visibility: hidden;
+        margin-top: -1000px;
+    }
+    ion-searchbar {
+        position: absolute;
+        opacity: .7;
+        z-index: 3;
+    }
+    .switch {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 80%;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 100;
+        opacity: .9;
+        .active {
+            background: white;
+            color: white;
+        }
+        .button {
+            width: 100px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+}.from-to{
+   background-color: #390c2b;
+   color:#fff!important;
+   padding: 7px;
+   padding-right: 0!important;
+   margin: 0;
+ }
+.fromto{
+  margin-bottom: 10px;
+  padding: 0;
+}
+.label{
+  width: 30px;
+  background: #390c2b;
+  margin: 3px;
+  height: 34px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 34px;
+  color:#fff;
+}
+.input-wrapper,.item-inner{
+  padding: 0;
+  margin: 0;
+}
+.item-inner{
+  padding: 0!important;
+  margin: 0!important;
+  overflow: hidden;
+}
+.req{
+  position: absolute;
+  bottom: 10px;
+  border-radius: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}

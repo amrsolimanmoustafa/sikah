@@ -1,0 +1,47 @@
+page-signup {
+    ion-avatar {
+        border: 1px solid white;
+        width: 97px;
+        border-radius: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 43px;
+    }
+    .list-md {
+        margin: 18px 0 16px 0;
+    }
+    .profile {
+        margin-top: -40px;
+        background-color: #390c2b;
+        padding: 10px;
+        width: 113%;
+        margin-left: -19px;
+    }
+    .input-wrapper {
+        // border: 1px solid #390c2b;
+    }
+    .arrow {
+        font-size: 2.2em;
+        margin-top: inherit;
+        background-color: #390c2b;
+        color: white;
+        width: 15%;
+        padding-top: 9px;
+        top: 6px;
+        padding-bottom: 5px;
+        height: 100%;
+        margin-left: 10px;
+        border: 1px solid #390c2b;
+        border-radius: 100%;
+    }
+    .sign{
+
+        border-bottom: 2px solid #390c2b;
+
+    }
+    form{
+        padding-top: 30px;
+
+    }
+    //button{align-content: center}
+}

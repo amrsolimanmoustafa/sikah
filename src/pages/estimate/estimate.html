@@ -1,0 +1,36 @@
+<ion-header class="hi">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'BreakDown'|translate}}</ion-title>
+  </ion-navbar>
+  <ion-list padding>
+      <ion-item class="fromto">
+        <ion-label fixed>{{'From' | translate}}</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="start">{{start}}</ion-input>
+      </ion-item>
+      <ion-item class="fromto">
+        <ion-label fixed>{{'To' | translate}}</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="end">{{end}}</ion-input>
+      </ion-item>
+    <h4 class="whi">{{'Sikkh Breakdown Normal' | translate}}<br>QAR {{this.globalservice.cost}}<br>  {{this.globalservice.distance}} <span class="distance">{{'Distance' | translate}}</span></h4>
+  </ion-list>
+</ion-header>
+
+<ion-content>
+<div id="map"></div>
+  <button ion-button color="primary" class="req" (click)="request()">
+  {{'Request Sikka Breakdown Normal' | translate}}
+</button>
+  <!--<sebm-google-map [latitude]="31.215553" [longitude]="29.936777" [zoom]="16">
+    <sebm-google-map-polyline>
+      <sebm-google-map-polyline-point [latitude]="31.215553" [longitude]="29.936777">
+      </sebm-google-map-polyline-point>
+      <sebm-google-map-polyline-point [latitude]="31.213025" [longitude]="29.939629">
+      </sebm-google-map-polyline-point>
+    </sebm-google-map-polyline>
+  </sebm-google-map>
+-->
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="logo">{{'BreakDown' | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cc cf" >
+  <h5 class="pac">{{'payment cash' | translate}}</h5>
+  <h1 class="amount">QAR {{this.globalservice.fare}}</h1>
+  <p class="help"><button (click)="help()">{{'Help' | translate}}</button></p>
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <button class="no-o" (click)="offline()">Stop New Orders</button>
+      </ion-row>
+      <br>
+      <ion-row>
+        <p class="rate">Rate your Client
+
+        <li *ngFor="let icon of icons(); let i = index" (click)="update(i+1)">
+          <ion-icon class="staricon" [name]="icon"></ion-icon>
+        </li>
+
+        </p>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

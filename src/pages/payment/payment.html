@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'BreakDown' | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cc">
+  <h5 class="pac">{{'payment cash' | translate}}</h5>
+  <h1 class="amount">QAR {{cost}}</h1>
+  <p class="help"><button (click)="help()">{{'Help' | translate}}</button></p>
+  <ion-row>
+    <a class="det">{{'Details' | translate}}</a>
+  </ion-row>
+  <table>
+    <tbody>
+      <tr>
+        <td>{{cost}} &ensp;{{'trip fare'| translate}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>00:00 &ensp; {{'minutes wait' | translate}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <button ion-button color="primary" class="wide" (click)="follow()">{{'follow up my car' | translate}}</button>
+</ion-content>

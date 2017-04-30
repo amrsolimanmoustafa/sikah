@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+        {{'Choose the distination' | translate}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<sebm-google-map [latitude]="this.globalservice.myLat" [longitude]="this.globalservice.myLng" [zoom]="16"(mapClick)="onSetMarker($event)" >
+  <sebm-google-map-marker [latitude]="marker.lat" [longitude]="marker.lng" *ngIf="marker"></sebm-google-map-marker>
+
+</sebm-google-map>
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary"  class="b-btn" (click)="onSave()" [disabled]="!marker">{{'save address' | translate}}</button>
+    </ion-col>
+  </ion-row>
+</ion-content>

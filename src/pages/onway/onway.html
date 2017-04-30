@@ -1,0 +1,37 @@
+<ion-header class="hi">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'BreakDown' | translate}}</ion-title>
+  </ion-navbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-67>
+        <table>
+          <tbody>
+            <tr>
+              <td class="bb">Mohammed</td>
+              <td>4.30 <ion-icon class="gold" name="star"></ion-icon></td>
+            </tr>
+          </tbody>
+        </table>
+        <ion-row>
+          <a ion-text href="tel:{{this.globalservice.drivermobile}}"> <ion-icon class="call" name="call"></ion-icon></a>
+        </ion-row>
+        <ion-row>
+          <h4 class="whi">{{'on the way' | translate}}</h4>
+        </ion-row>
+      </ion-col>
+      <ion-col width-33 class="cc">
+        <img src="assets/imgs/breakdown.png" width="64">
+        <p class="whi">No. 123456</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+  <iframe *ngIf="this.globalservice.language == 'en'" class="framea" [src]="urlen" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe *ngIf="this.globalservice.language == 'ar'" class="framea" [src]="urlar" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+</ion-content>

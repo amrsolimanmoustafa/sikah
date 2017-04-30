@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="logo">SIKKH</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list radio-group [(ngModel)]="radio">
+    <ion-item *ngFor="let i of reasons">
+      <ion-label>{{i.reasonsname}}</ion-label>
+      <ion-radio [value]="i.reasonsid" (click)="selected(i.reasonsid)"></ion-radio>
+    </ion-item>
+    <ion-textarea rows="4" [(ngModel)]="message"></ion-textarea>
+    <ion-row>
+      <button ion-button color="primary" class="wide" (click)="send()" >{{'Send' | translate}}</button>
+    </ion-row>
+  </ion-list>
+</ion-content>

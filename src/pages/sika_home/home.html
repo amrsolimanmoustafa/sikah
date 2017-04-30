@@ -1,0 +1,28 @@
+<ion-header class="hi">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'BreakDown' | translate}}</ion-title>
+  </ion-navbar>
+  <ion-list padding class="where-to">
+    <ion-item>
+      <ion-input type="text" (click)="openMap()"  placeholder="&#9642; Where to?"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-header>
+
+<ion-content>
+<!--
+  <page-plain-map [lat]="this.globalservice.myLat" [lng]="this.globalservice.myLng"></page-plain-map>
+-->
+  <sebm-google-map [latitude]="this.globalservice.myLat" [longitude]="this.globalservice.myLng" [zoom]="16">
+    <sebm-google-map-marker [latitude]="this.globalservice.myLat" [longitude]="this.globalservice.myLng" [label]="'M'">
+
+    </sebm-google-map-marker>
+
+  </sebm-google-map>
+<!--
+  <div id="map"></div>
+-->
+</ion-content>

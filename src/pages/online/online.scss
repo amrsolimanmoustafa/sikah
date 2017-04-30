@@ -1,0 +1,34 @@
+page-online {
+	.cgmap{
+		width: 100%;
+		height: calc(100vh - 75px);
+		border: 0;
+	}
+	.we-ti{
+		margin:0;
+		padding: 5px 5px;
+		font-size: 115%;
+		color:#fff;
+	}
+	.yo-on{
+		height: 30px;
+		color: #fff;
+		line-height: 30px;
+		vertical-align: middle;
+		text-indent: 5px;
+		background-color: #de7c11;
+	}
+  .toolbar-title {
+    text-align: right;
+    float: right;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 24px;
+  }
+  .back-button-md {
+    margin: 0 6px;
+    min-width: 44px;
+    box-shadow: none;
+    margin-top: -50px;
+  }
+}

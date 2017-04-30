@@ -1,0 +1,30 @@
+page-driver-home {
+  .cgmap{
+    width: 100%;
+    height: calc(100vh - 75px);
+    border: 0;
+  }
+  .go-on{
+    color: #fff;
+    margin: 100px;
+    background-color: #de7c11;
+    padding: 4px 8px;
+    border-radius: 9px;
+  }
+  div#map_canvas {
+    height: 542px !important;
+  }
+  .toolbar-title {
+    text-align: right;
+    float: right;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  .back-button-md {
+    margin: 0 6px;
+    min-width: 44px;
+    box-shadow: none;
+    margin-top: -63px;
+  }
+}

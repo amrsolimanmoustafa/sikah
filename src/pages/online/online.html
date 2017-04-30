@@ -1,0 +1,20 @@
+<ion-header class="si">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="logo">{{'Sikkh' | translate}}</ion-title>
+    <ion-row>
+      <h1 class="we-ti">{{'welcome' | translate}} <span>{{drivername}}</span></h1>
+    </ion-row>
+  </ion-navbar>
+
+  <ion-row class="yo-on">
+  	{{'Your are online' | translate}}
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <iframe *ngIf="this.globalservice.language == 'en'" class="framea" [src]="urlen" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe *ngIf="this.globalservice.language == 'ar'" class="framea" [src]="urlar" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+</ion-content>

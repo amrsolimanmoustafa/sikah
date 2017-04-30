@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="logo">{{'Sikkh' | translate}}</ion-title>
+  </ion-navbar>
+  <h1 class="we-ti">Welcome <span>{{this.globalservice.driver.first_name}}</span></h1>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ccont">
+    <div class="cdwrap">
+      <div class="countdown" (click)="confirm()">
+        <div class="countdown-number">{{timeLeft}}</div>
+        <svg>
+          <circle class="bgy" r="72" cx="80" cy="80"></circle>
+        </svg>
+        <svg>
+          <circle r="72" cx="80" cy="80" style="animation: countdown 15s linear forwards;"></circle>
+        </svg>
+      </div>
+
+      <div class="des-det">
+        <div class="dd-to">To |</div>
+        <div class="dd-adr">{{this.globalservice.roadDist}}</div>
+        <div class="dd-ti">| 11 MIN</div>
+      </div>
+
+      <div class="rating">
+        <ion-icon class="gold" name="star"></ion-icon>
+        <ion-icon class="gold" name="star"></ion-icon>
+        <ion-icon class="gold" name="star"></ion-icon>
+        <ion-icon class="gold" name="star"></ion-icon>
+        <ion-icon class="gold" name="star"></ion-icon>
+      </div>
+
+    </div>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,115 @@
+page-countdown {
+	background-color: #390c2b;
+	.ccont{
+		width: 100%;
+		background-color: #390c2b;
+		height: calc(100vh - 73px);
+		border: 0;
+	}
+	.we-ti{
+		margin:0;
+		padding: 5px 5px;
+		font-size: 115%;
+	}
+	.cdwrap{
+		width: 100%;
+		display: block;
+		text-align: center;
+		.countdown {
+			position: relative;
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			height: 160px;
+			width: 160px;
+			text-align: center;
+			border-radius:50%;
+			background: #000;
+
+			.countdown-number {
+				color: #390c2b;
+				font-size:300%;
+				font-weight:700;
+				display: inline-block;
+				height:160px;
+				width:160px;
+				line-height: 140px;
+				border-radius:50%;
+				background: #fff;
+				border:11px solid #390c2b;
+			}
+
+			svg{
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			    width: 160px;
+			    height: 160px;
+			    transform: rotateY(-180deg) rotateZ(-90deg);
+				circle {
+					stroke-dasharray: 452px;
+					stroke-dashoffset: 0px;
+					stroke-linecap: none;
+					stroke-width: 2px;
+					stroke: #fe8c2c;
+					fill: none;
+					z-index: 1;
+					&.bgy{
+						stroke-width: 6px;
+						stroke: #7c3501;
+					}
+				}
+			}
+		}
+	}
+
+	@keyframes countdown {
+	  from {
+	    stroke-dashoffset: 0px;
+	  }
+	  to {
+	    stroke-dashoffset: 452px;
+	  }
+	}
+
+
+	.rating{
+		width: 100%;
+		text-align: center;
+		display: block;
+		padding: 10px 0;
+		.gold{
+			color:gold;
+			font-size: 22px;
+			margin: 0 5px;
+		}
+	}
+
+	.des-det{
+		padding: 0 5px;
+		width: 90%;
+		max-width: 300px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		background-color: #fff;
+		text-align: left;
+		white-space: nowrap;
+		display: flex;
+		.dd-to{
+			font-weight: bold;
+			flex:auto;
+			max-width: 35px;
+		}
+		.dd-adr{
+			text-indent: 5px;
+			flex:auto;
+			overflow: hidden;
+		}
+		.dd-ti{
+			font-weight: bold;
+			text-indent: 5px;
+			flex:auto;
+			max-width: 65px;
+		}
+	}
+}

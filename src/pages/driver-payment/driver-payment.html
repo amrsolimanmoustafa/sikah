@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'BreakDown' | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cc">
+  <h5 class="pac">{{'payment cash' | translate}}</h5>
+  <h1 class="amount">QAR {{this.globalservice.fare}}</h1>
+  <p class="help"><button (click)="help()">{{'Help' | translate}}</button></p>
+  <ion-row>
+    <a class="det">{{'Details' | translate}}</a>
+  </ion-row>
+  <table>
+    <tbody>
+    <tr>
+      <td>cost &ensp;{{'trip fare'| translate}}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>00:00 &ensp; {{'minutes wait' | translate}}</td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+  <button ion-button *ngIf=" this.val != 0" color="primary" class="wide" (click)="end()">Ending</button>
+  <button ion-button *ngIf="this.val == 0" color="primary" class="wide" (click)="cont()">continue</button>
+</ion-content>

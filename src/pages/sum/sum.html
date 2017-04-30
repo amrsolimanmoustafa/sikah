@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'BreakDown'|translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="cen rt">
+    <h5 class="pac bb">Arrived Now</h5>
+  </ion-row>
+  <ion-row class="cen">
+    <h2 class="pac">QAR {{this.globalservice.cost}}</h2>
+  </ion-row>
+  <ion-row class="bhr">
+    <h5 class="pac">Thank you for choosing Sikkh</h5>
+  </ion-row>
+  <ion-row>
+    <a class="det">October 16, 2017</a>
+  </ion-row>
+  <ion-grid class="bhr">
+
+    <h6 color="primary">4:35 PM | {{this.globalservice.origin}}</h6>
+    <ion-row>
+      <ion-col width-10>
+        <ion-icon name="arrow-round-down" class="frto" color="primary"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <h6 color="primary">5:05 PM | {{this.globalservice.distination}}</h6>
+  </ion-grid>
+  <ion-grid class="cen" style="text-align: center;">
+    <ion-row>
+      <ion-col width-50 class="cc t">
+        <iframe [src]="url" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </ion-col>
+      <ion-col width-50 class="cc t">
+        <p>Your ride with {{this.globalservice.drivername}}</p>
+        <table class="ut">
+          <tbody>
+            <tr>
+              <td>{{this.globalservice.distance}}<br>Kilometers</td>
+              <td>{{this.globalservice.trip_time}}<br>Trip time</td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 class="cc t">
+        <p>{{'BreakDown' | translate}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item class="cc t" no-lines>
+   <p class="rate">Rate your driver
+
+    <li *ngFor="let icon of icons(); let i = index" (click)="update(i+1)">
+      <ion-icon class="staricon" [name]="icon"></ion-icon>
+    </li>
+
+  </p>
+  </ion-item>
+
+  <!--<rating [(ngModel)]="rate" readOnly="false" max="5" emptyStarIconName="star-outline"
+  halfStarIconName="star-half"
+  starIconName="star"
+  nullable="false"
+  (ngModelChange)="onModelChange($event)"></rating>-->
+</ion-content>

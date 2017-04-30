@@ -1,0 +1,60 @@
+<ion-header class="si">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="logo">SIKKH</ion-title>
+
+  <ion-row>
+    <h1 class="we-ti">Client Waiting for You</h1>
+  </ion-row>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="des-det">
+    <span class="dd-to">To |</span>
+    <span class="dd-adr">{{this.globalservice.roadDist}}</span>
+    <a class="dd-nav" (click)="navigate()">
+      <ion-icon name="md-navigate"></ion-icon>
+      <span>Navigate</span>
+    </a>
+  </ion-row>
+  <ion-row>
+    <table class="rating">
+      <tbody>
+      <tr>
+        <td class="bb">{{this.globalservice.user_name}}</td>
+        <td><ion-icon class="gold" name="star"></ion-icon> 4.20</td>
+      </tr>
+      </tbody>
+    </table>
+  </ion-row>
+  <ion-row class="dact">
+    <div class="dwrap">
+      <div class="gcall qs">
+        <a ion-text href="tel:{{mobile}}"> <ion-icon name="call"></ion-icon></a>
+      </div>
+      <div class="gsms qs" (click)="sendsms()">
+        <ion-icon name="ios-mail-outline"></ion-icon>
+      </div>
+      <div class="gwait qs">
+        <ion-icon name="timer"></ion-icon> Wait for Client
+      </div>
+      <div class="gcancel qs" (click)="cancel()">
+        <ion-icon name="ios-remove-circle-outline"></ion-icon> Cancel Trip
+      </div>
+    </div>
+  </ion-row>
+  <ion-row class="tdet">
+    <div class="twrap">
+      <div class="time-r ts">
+        000
+      </div>
+      <div class="paymnt ts">
+        <img src="assets/imgs/cash.png"> <span>Payment | Cash</span>
+      </div>
+    </div>
+  </ion-row>
+  <button ion-button (click)="start()"> {{'arrived' | translate}}</button>
+</ion-content>

@@ -1,0 +1,148 @@
+page-clientwait {
+  color:#390c2b;
+  .we-ti{
+    margin:0;
+   /* padding: 5px 5px;*/
+    font-size: 115%;
+    color : white;
+  }
+  .des-det{
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    .dd-to{
+      padding: 5px;
+      font-weight: bold;
+    }
+    .dd-adr{
+      padding: 5px 0;
+    }
+    .dd-nav{
+      right: 0;
+      margin-right: 5px;
+      margin-top: 5px;
+      padding: 0 8px;
+      position: absolute;
+      background-color: #ff7f26;
+      span{
+        padding-left: 15px;
+      }
+    }
+  }
+  table{
+    &.rating{
+      margin-top: 40px;
+      width: 70%;
+      text-align: left;
+      tr{
+        td{
+          padding: 0.4em;
+          padding-left: 1em;
+        }
+      }
+    }
+  }
+  .gold{
+    color:gold;
+  }
+  .dact{
+    width: 100%;
+    color:#390c2b;
+    .dwrap{
+      width: 100%;
+      padding: 10%;
+      .qs{
+        width: 50%;
+        float: left;
+        height: 50px;
+        vertical-align: middle;
+        line-height: 50px;
+        text-align: center;
+        &.gcall,&.gsms{
+          font-size: 36px;
+          border-bottom: 2px silver solid;
+        }
+        &.gcall{
+          border-right: 2px silver solid;
+        }
+        &.gwait{
+          line-height: 60px;
+          border-right: 2px silver solid;
+          ion-icon{
+            font-size: 120%;
+          }
+        }
+        &.gcancel{
+          line-height: 60px;
+          ion-icon{
+            color: red;
+            transform: rotate(-45deg);
+            font-weight: 700;
+            font-size: 120%;
+          }
+        }
+      }
+    }
+  }
+  .tdet{
+    width: 100%;
+    color:#390c2b;
+    .twrap{
+      width: 100%;
+      padding: 0 5%;
+      .ts{
+        float: left;
+        width: 60%;
+        &.paymnt{
+          text-align: right;
+          span{
+            font-size: 120%;
+          }
+          img{
+            padding-top: 5px;
+            width: 32px;
+          }
+        }
+        &.time-r{
+          width: 40%;
+          text-align: center;
+          font-size: 42px;
+          color: transparent;
+        }
+      }
+    }
+  }
+  .btnc{
+    width: 100%;
+    padding: 10% 0;
+    .strip{
+      width: 80%;
+      max-width: 200px;
+      background-color: #390c2b;
+      color: #fff;
+      text-align: center;
+      margin: 0 auto;
+      height: 30px;
+      vertical-align: middle;
+      line-height: 30px;
+      font-size: 120%;
+    }
+  }
+  .toolbar-title {
+    text-align: right;
+    float: right;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 17px;
+  }
+  .back-button-md {
+    margin: 0 6px;
+    min-width: 44px;
+    box-shadow: none;
+    margin-top: -40px;
+  }
+  button.disable-hover.button.button-md.button-default.button-default-md {
+    margin-left: 33%;
+  }
+}

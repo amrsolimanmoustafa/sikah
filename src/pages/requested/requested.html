@@ -1,0 +1,42 @@
+<ion-header class="hi">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'BreakDown'|translate}}</ion-title>
+  </ion-navbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-67>
+        <table>
+          <tbody>
+            <tr>
+              <td class="bb">{{this.globalservice.drivername}}</td>
+              <td>4.30 <ion-icon class="gold" name="star"></ion-icon></td>
+            </tr>
+          </tbody>
+        </table>
+        <ion-row>
+        </ion-row>
+        <ion-row>
+          <p class="whi"><b class="bb whi">{{'Attention' | translate}}:</b><br>{{'If you cancel 2 minute after requsting, a fee may apply, for details, visit' | translate}} <a href="http://sikka.com">sikka.com</a></p>
+        </ion-row>
+      </ion-col>
+      <ion-col width-33 class="cc">
+        <img src="assets/imgs/breakdown.png" width="64">
+        <p class="whi">No. {{this.globalservice.car_no}}</p>
+        <button (click)="showConfirm()" ion-button color="danger" class="cancel">
+          {{ timeLeft }}<br>{{'cancel' | translate}}
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+<!--
+  <div id="map"></div>
+-->
+  <iframe *ngIf="this.globalservice.language == 'en'" class="framea" [src]="urlen" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe *ngIf="this.globalservice.language == 'ar'" class="framea" [src]="urlar" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+</ion-content>

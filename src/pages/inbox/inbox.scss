@@ -1,0 +1,18 @@
+page-inbox {
+.controw{
+   margin-left: 3%;
+   margin-right:3%;
+   border-bottom: 1px solid #390c2b;
+   h6{
+        font-size: 14px;
+        margin-left: auto;
+        text-decoration: underline;
+        margin-right: auto;
+        color: #390c2b;
+   }
+   p{
+       max-height: 70px;
+       overflow: auto;
+   }
+}
+}

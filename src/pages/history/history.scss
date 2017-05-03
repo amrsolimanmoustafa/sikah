@@ -1,0 +1,27 @@
+page-history {
+.row{
+     padding: 0 10px;
+    
+    .col{
+        h6{
+            font-size:1.3rem;
+        }
+        text-align:center;
+    }
+    img{
+        max-width: 100%;
+        height: 115px !important ;
+        max-height: 115px !important;
+        border: 0;
+        width: 100%;
+       
+    }
+    p{
+        text-align:center;
+        width:100%;
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    }
+}
+
+}

@@ -1,0 +1,40 @@
+page-tripdetails {
+.header
+{ h3{
+    display: inline;
+    line-height: 50px;
+   }
+  .button{
+      float: right;
+      width: 20%;
+      text-transform: none;
+      color:white;
+  }
+}
+.map{
+       height: 33%;
+       width: 100%;
+       max-height: 33%;
+
+}
+h4{
+    font-size: 1.6rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:#390c2b;
+}
+h6{
+   margin-left: 5%;
+}
+.row{
+    margin-top: 10px;
+    margin-left: 5%;
+    height: 75px;
+    .col img{
+        height: 100%;
+    }
+    p{
+        margin:5px 0 0;
+    }
+}
+}

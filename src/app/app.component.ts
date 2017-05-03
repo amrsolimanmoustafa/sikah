@@ -78,6 +78,9 @@ export class MyApp {
 */
       { title: 'sign-In', icon: 'home',component: BeforeSignupPage },
       { title: 'sign-In', icon: 'home',component: DriverFeed },
+      { title: 'Home', icon: 'home',component: HomePage },
+      { title: 'Help',  icon: 'home',component: Help },
+      { title: 'Lang', icon: 'home', component: Lang },
 
 
     ];

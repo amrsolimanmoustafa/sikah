@@ -18,6 +18,26 @@
   min-height:  150px;
   background-color: #390c2b;
 }
+.header{
+  background-color:#390c2b;
+  color: white;
+   h3{
+        margin-left: 5%;
+        font-size: 16px;
+        font-weight: normal;
+}
+}
+
+.toolbar-background{
+background-color:#390c2b;
+}
+.toolbar-title{
+  color: white;
+
+}
+.back-button.show-back-button{
+  color:white;
+}
 .toolbar,.toolbar-background{
   box-shadow: 0;
   border-bottom: 0!important;

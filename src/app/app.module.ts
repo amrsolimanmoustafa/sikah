@@ -52,6 +52,12 @@ import {EndTrip} from "../pages/endtrip/endtrip";
 import {DriverPayment} from "../pages/driver-payment/driver-payment";
 import {Done} from "../pages/done/done";
 import {DriverFeed} from "../pages/driverfeed/driverfeed";
+import {Commonques} from "../pages/commonques/commonques";
+import {Contactus} from "../pages/contactus/contactus";
+import {History} from "../pages/history/history";
+import {Inbox} from "../pages/inbox/inbox";
+import {Tripdetails} from "../pages/tripdetails/tripdetails";
+import {Clientcomments} from "../pages/clientcomments/clientcomments";
 import {End} from "../pages/end/end";
 import {SMS} from "@ionic-native/sms";
 import {FocusModule} from "angular2-focus";
@@ -102,7 +108,13 @@ export function createTranslateLoader(http: any) {
     DriverPayment,
     Done,
     DriverFeed,
-    End
+    End,
+    Commonques,
+    Contactus,
+    History,
+    Inbox,
+    Tripdetails,
+    Clientcomments
   ],
   imports: [
     BrowserModule,
@@ -160,7 +172,15 @@ export function createTranslateLoader(http: any) {
     DriverPayment,
     Done,
     DriverFeed,
-    End
+    End,
+    Commonques,
+    Contactus,
+    Inbox,
+    History,
+    Tripdetails,
+    Clientcomments
+    
+
   ],
   providers: [
     StatusBar,

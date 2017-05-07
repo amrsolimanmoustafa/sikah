@@ -13,7 +13,15 @@ import {BeforeSignupPage} from '../pages/before-signup/before-signup';
 import {GlobalService} from "../providers/global-service";
 import {Storage} from '@ionic/storage';
 import {Lang} from "../pages/lang/lang";
+import {Aboutsikkh} from "../pages/aboutsikkh/aboutsikkh";
+import {Editaccount} from "../pages/editaccount/editaccount";
+import {Clientcomments} from "../pages/clientcomments/clientcomments";
+import {Fee} from "../pages/fee/fee";
 import {HomePage} from "../pages/home/home";
+import {Commonques} from "../pages/commonques/commonques";
+import {Contactus} from "../pages/contactus/contactus";
+import {History} from "../pages/history/history";
+import {Inbox} from "../pages/inbox/inbox";
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
 import {DriverHome} from "../pages/driver-home/driver-home";
 import {Online} from "../pages/online/online";
@@ -66,8 +74,18 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Help', component: Help },
       { title: 'Lang', component: Lang },
-/*
-      { title: 'Cluster', component: Cluster},
+      { title: 'what is sikkh', component: Aboutsikkh },
+      { title: 'Cancel My Trip', component: Canceled },
+      { title: 'Inbox', component: Inbox},
+      { title: 'History', component: History},
+      { title: 'Contact Us ', component: Contactus },
+      { title: 'Common Questions', component: Commonques },
+      { title: 'Edit My Account', component: Editaccount },
+      { title:'Pay a Fee', component:Fee},
+      { title:'Client Comments', component:Clientcomments},
+      
+
+/*      { title: 'Cluster', component: Cluster},
 */
       { title: 'Sign-up', component: BeforeSignupPage },
       { title: 'Sign-Out', component: BeforeSignupPage },
@@ -89,6 +107,7 @@ export class MyApp {
       {title: 'Online' , component : Online},
       {title : 'driver_cancel', component : DriverCancel},
       { title: 'Lang', component: Lang },
+      { title: 'Client Comments', component: Clientcomments },
       {title : 'countdown', component : Countdown},
       { title: 'Sign-up', component: BeforeSignupPage },
       { title: 'Sign-Out', component: BeforeSignupPage },

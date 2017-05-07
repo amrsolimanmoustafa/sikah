@@ -1,0 +1,40 @@
+page-editaccount {
+    .row{
+        height: 105px;
+    }
+     img{
+         border-radius: 50%;
+         background-color: white;
+         margin-left: 10%;
+         margin-top: 15px;
+     }
+ .cont{
+         margin-top: 40px;
+ }
+     .chpassword{
+            width: 50%;
+            float: left;
+            height: 210px;
+            border-right: 1px solid gray;
+            text-align: center;
+           
+     }
+     .chcar{
+            width:50%; 
+            float:right;
+             text-align: center;
+     }
+     .button{
+                margin-top: 45%;
+                font-size: 1.7rem;
+                text-transform: none;
+                width: 96%;
+                max-width: 100%;
+     }
+     h6{
+        margin-top: 2.6rem !important;
+            margin-left: 5%;
+     }
+
+     
+}

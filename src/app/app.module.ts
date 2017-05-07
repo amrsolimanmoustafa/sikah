@@ -56,8 +56,18 @@ import {Commonques} from "../pages/commonques/commonques";
 import {Contactus} from "../pages/contactus/contactus";
 import {History} from "../pages/history/history";
 import {Inbox} from "../pages/inbox/inbox";
+import {ChanPassEmail} from "../pages/chan-pass-email/chan-pass-email";
+import {ChanPassOld} from "../pages/chan-pass-old/chan-pass-old";
 import {Tripdetails} from "../pages/tripdetails/tripdetails";
 import {Clientcomments} from "../pages/clientcomments/clientcomments";
+import {Aboutsikkh} from "../pages/aboutsikkh/aboutsikkh";
+import {Fee} from "../pages/fee/fee";
+import {Editaccount} from "../pages/editaccount/editaccount";
+import {Changepass1} from "../pages/changepass1/changepass1";
+import {Changepass2} from "../pages/changepass2/changepass2";
+import {Changepass3} from "../pages/changepass3/changepass3";
+import {Changelicense} from "../pages/changelicense/changelicense";
+import {Changephotos} from "../pages/changephotos/changephotos";
 import {End} from "../pages/end/end";
 import {SMS} from "@ionic-native/sms";
 import {FocusModule} from "angular2-focus";
@@ -114,7 +124,17 @@ export function createTranslateLoader(http: any) {
     History,
     Inbox,
     Tripdetails,
-    Clientcomments
+    Clientcomments,
+    Aboutsikkh,
+    Editaccount,
+    Changepass1,
+    Changepass2,
+    Changepass3,
+    ChanPassEmail,
+    ChanPassOld,
+    Changelicense,
+    Changephotos,
+    Fee
   ],
   imports: [
     BrowserModule,
@@ -178,7 +198,17 @@ export function createTranslateLoader(http: any) {
     Inbox,
     History,
     Tripdetails,
-    Clientcomments
+    Clientcomments,
+    Aboutsikkh,
+    Editaccount,
+    Changepass1,
+    Changepass2,
+    Changepass3,
+    ChanPassEmail,
+    ChanPassOld,
+    Changelicense,
+    Changephotos,
+    Fee
     
 
   ],

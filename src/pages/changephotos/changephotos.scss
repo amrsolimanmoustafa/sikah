@@ -1,0 +1,52 @@
+page-changephotos {
+  .rowheader{
+        height: 105px;
+        .col{
+           img{
+                border-radius: 50%;
+                background-color: white;
+                margin-left: 10%;
+                margin-top: 15px;
+         }
+        }
+    }
+    .rowcont{
+        height: 20%;
+        h5{
+        margin-top: 30px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-left: 5%;
+        color: #390c2b;
+        }
+    }
+       
+  h6{
+          margin-top: 2.6rem !important;
+          margin-left: 5%;
+  }
+ 
+    .imagesrow{
+        border-bottom: 2px solid #390c2b;
+        .col{
+            text-align: center;
+            span{
+                display: block;
+                text-align: center;
+                font-size:1.2em;
+                color:#390c2b;
+            }
+    }
+    }
+
+    .button{
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+
+    }
+   
+    
+}
